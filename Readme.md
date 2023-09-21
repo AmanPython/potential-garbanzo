@@ -3,6 +3,12 @@
     - [Rotate a linked list](#rotate-a-linked-list)
 
 ## LinkedList Observations:
+ - Updating linked list
+    ```python
+     newhead = Node(5)           ## updating the reference value
+     newhead.next = Node(1)      ## Updating reference of the pointer 
+     newhead.val = 8             ## Updating the value at node
+    ```
  - Use of while loop for iteration
     - Way 1:
         ```python
@@ -28,6 +34,7 @@
     - Did not consider the base case, when length is zero, one or k is zero
     - Breaking when k is zero (did not consider this case)
     - Could have updated the end point on first Iteration (striver approch).
+    - Iteration Problem, if k == 0: return head, before this, I made the linked list as a cycle. This returned a cycle.
  - Naming Convention Issues
    | S.No. | Aman | ChatGPT | Striver |
    |--- | ---| ---- | ---- |
