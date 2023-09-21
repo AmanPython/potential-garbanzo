@@ -7,6 +7,9 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
+        ## Base Case: When lenght is zero or one
+        if head == None or head.next == None or k == 0:       # Initially did not consider the base cases.
+            return head
         # Step1 : Find the lenght of the list
         node = head 
         n = 0
@@ -15,6 +18,8 @@ class Solution(object):
             n+=1 
         # Step2 : Update the end point 
         k = k % n
+        if k == 0:                                             # It's breaking when k = 0, this is just patch.
+            return head
         end = n - (k + 1)
         node = head 
         while end > 0 :
