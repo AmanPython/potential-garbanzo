@@ -1,4 +1,4 @@
-## Initial White Paper Solution
+## ChatGPT Optimized Solution
 
 class Solution(object):
     def rotateRight(self, head, k):
@@ -7,30 +7,29 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
-        ## Base Case: When lenght is zero or one
-        if head == None or head.next == None or k == 0:       # Initially did not consider the base cases.
+        if not head or not head.next or k == 0:
             return head
-        # Step1 : Find the lenght of the list
-        node = head 
-        n = 0
-        while node:
-            node = node.next 
-            n+=1 
-        # Step2 : Update the end point 
-        k = k % n
-        if k == 0:                                             # It's breaking when k = 0, this is just patch.
+
+        # Step 1: Calculate the length of the linked list
+        current = head
+        length = 1
+        while current.next:
+            current = current.next
+            length += 1
+
+        # Step 2: Calculate the effective rotation value
+        k = k % length
+        if k == 0:
             return head
-        end = n - (k + 1)
-        node = head 
-        while end > 0 :
-            end -= 1
-            node = node.next 
-        start = node.next
-        nex = start
-        node.next = None 
-        # Step3 : Connect the start point 
-        while k > 1:
-            k-= 1
-            nex = nex.next 
-        nex.next = head 
-        return start
+
+        # Step 3: Find the new tail and break the cycle
+        current.next = head  # Make the list circular
+        current = head
+        for _ in range(length - k - 1):
+            current = current.next
+
+        # Step 4: Update the head and tail pointers
+        new_head = current.next
+        current.next = None
+
+        return new_head
