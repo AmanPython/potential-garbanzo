@@ -1,6 +1,8 @@
 ## Strive CheatSheet
  - Day 7
     - [Rotate a linked list](#rotate-a-linked-list)
+ - Day 9
+    - 
 
 ## LinkedList Observations:
  - Updating linked list
@@ -46,3 +48,23 @@
 #### Time and Space Complexity
  - Time : O(N) or O(N + k), where N is the number of nodes
  - Space : O(1)
+
+
+ ## Recursion Observation
+ #### WhitePaper Solution 
+ - Logical Issues 
+    - Did not break recursion using return
+    - Duplicates elements in array, I have sorted the array, and same array had to pop an element, the poped element became different after sorting.
+    - Deep Copy and Shallow copy
+    ```python
+    arr = [1,2,4,5]
+    val = arr          # shallow copy
+    val2 = arr[:]      # deep copy
+    ```
+ - Naming Convention Issues
+   | S.No. | Aman | ChatGPT | Striver |
+   |--- | ---| ---- | ---- |
+   | 1. | start/node | current | temp |
+   | 2. | n/count | length | length |
+   | 3. | target/end | No Name | end |
+   | 4. | nex   | new_head | head |
