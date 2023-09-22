@@ -64,7 +64,9 @@
  - Naming Convention Issues
    | S.No. | Aman | ChatGPT | Striver |
    |--- | ---| ---- | ---- |
-   | 1. | start/node | current | temp |
-   | 2. | n/count | length | length |
-   | 3. | target/end | No Name | end |
-   | 4. | nex   | new_head | head |
+   | 1. | all_sol | all_sum | ans |
+   | 2. | helper_fun | generate_subset_sums | subsetSumsHelper |
+   | 3. | total_sum | current_sum | sum |
+   | 4. | n | index | ind |
+ 
+ - Their is issue, where to use _ and where not to use.
