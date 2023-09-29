@@ -2,7 +2,7 @@
 
 ## Introduction
  - Recursive Solution
- - Memozization 
+ - Memoization 
  - Iterative Solution
 
 ## Recursive Solution
@@ -137,4 +137,5 @@
             else:
                 dp[i][j] = dp[i-1][j]
     ```
+    - If True False are used, use the or condition.
     - Their could be other possible itertive solutions, like this problem has one dimensional array solution, but this is far most easiest way to solve.
