@@ -1,9 +1,9 @@
 ## Dynamic Programming
 
 ## Introduction
- - Recursive Solution
- - Memoization 
- - Iterative Solution
+ - [Recursive Solution](#recursive-solution) : Easy to find the solution, usually same function is called many times, overlapping of problems, either timelimit exceeds or stack overflows.
+ - [Memoization](#memoization) : This solved the overlapping problems, happend in recursive solution. As per Aditya Verma, their is one problem, matrix multiplications, where stack overflows, all other places, this solves problems efficiently.
+ - [Iterative Solution](#iterative-solution) : Here stack overflow won't be problem. This is the most prefered solution, but writing this solution directly is queit hard. 
 
 ## Recursive Solution
 1. Knapsack Problems
@@ -24,6 +24,8 @@
         else:
             return self.isSubsetSum(N-1,arr,sum)
  ```
+
+ ## Memoization
  - Convert Recursive Solution to Memoization
  ```python
  class Solution:
@@ -75,7 +77,7 @@
     ```
 
 
-
+## Iterative Solution
  - Convert all Recursion to iterative Solution
  ```python
  class Solution:
