@@ -52,6 +52,7 @@
 
  ## Recursion Observation
  #### WhitePaper Solution 
+ - subsetSums
  - Logical Issues 
     - Did not break recursion using return
     - Duplicates elements in array, I have sorted the array, and same array had to pop an element, the poped element became different after sorting.
@@ -61,12 +62,24 @@
     val = arr          # shallow copy
     val2 = arr[:]      # deep copy
     ```
- - Naming Convention Issues
+ - Naming Convention Issues (subsetSums)
    | S.No. | Aman | ChatGPT | Striver |
    |--- | ---| ---- | ---- |
    | 1. | all_sol | all_sum | ans |
    | 2. | helper_fun | generate_subset_sums | subsetSumsHelper |
    | 3. | total_sum | current_sum | sum |
    | 4. | n | index | ind |
+
+ - allsubsets
+ - Logical Issues
+   - Duplicates Removal Solution
+
+ - Naming Convention Issues (allsubsets)
+   | S.No. | Aman | ChatGPT | Striver |
+   |--- | ---| ---- | ---- |
+   | 1. | all_sol | all_subsets |  |
+   | 2. | helper_fun | generate_subsets | |
+   | 3. | arr | current_subsets | |
+   | 4. | n | index |  |
  
  - Their is issue, where to use _ and where not to use.
