@@ -5,6 +5,13 @@
  - [Memoization](#memoization) : This solved the overlapping problems, happend in recursive solution. As per Aditya Verma, their is one problem, matrix multiplications, where stack overflows, all other places, this solves problems efficiently.
  - [Iterative Solution](#iterative-solution) : Here stack overflow won't be problem. This is the most prefered solution, but writing this solution directly is queit hard. 
 
+| Index | Recursive Solution | Iterative Solution |
+| -- | -- | -- |
+| Space Complexity |  O(N)  |  O(N*W) | 
+| Time Complexity | Worst case - O(2^N) | O(N*W)  |
+|                 | Exponential time complexity | Better then recursion |
+
+
 ## Recursive Solution
 1. Knapsack Problems
  - Write Recursive Solution ( should not be in backtrack style, should be from n to 0)
