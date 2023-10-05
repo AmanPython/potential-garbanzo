@@ -1,4 +1,27 @@
 ## Dynamic Programming
+ - [0 - 1 Knapsack (6)](#0---1-knapsack-6)
+ - Unbounded Knapsack (5)
+ - Fibonachi (7)
+ - LCS (15)
+ - LIS (10)
+ - Kandane's Algorithm (6)
+ - Matrix Chain Multiplication (7)
+ - [DP on Trees (4)](#dp-on-tress)
+ - DP on Grid (14)
+ - Others (5)
+
+## All the Problems
+ ### [KnapSack](https://www.geeksforgeeks.org/introduction-to-knapsack-problem-its-types-and-how-to-solve-them/)
+ #### [Fractional Knapsack (Greedy Approch)](https://www.geeksforgeeks.org/fractional-knapsack-problem/)
+ #### [0 - 1 Knapsack (6) ](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
+  - [Subset Sum](https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab)
+  - Equal Sum Partition
+  - Count of subsetsum
+  - Minimum subset sum diff
+  - target sum
+  - No of subsets with given difference (# of subset E given diff)
+
+#### [Unbounded Knapsack]()
 
 ## Introduction
  - [Recursive Solution](#recursive-solution) : Easy to find the solution, usually same function is called many times, overlapping of problems, either timelimit exceeds or stack overflows.
@@ -148,3 +171,10 @@
     ```
     - If True False are used, use the or condition.
     - Their could be other possible itertive solutions, like this problem has one dimensional array solution, but this is far most easiest way to solve.
+
+## DP on Tress
+ - Diameter of Binary Tree
+ - Maximum path sum from any node to any
+ - Maximum path sum from leaf to leaf
+ - Diameter of N-array Tree
+ 
