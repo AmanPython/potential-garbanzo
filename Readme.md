@@ -1,8 +1,36 @@
 ## Strive CheatSheet
  - Day 7
     - [Rotate a linked list](#rotate-a-linked-list)
+    - 
  - Day 9
     - 
+ - Day 17
+    - [Bottom view of binary Tree](#bottom-view-of-binary-tree)
+    - [Maximum width of binary Tree](#maximum-width-of-binary-tree)
+    - [Height of Binary Tree](#height-of-binary-tree)
+
+ ## Bottom View of Binary Tree
+ - Pre-Order Traversal
+ - Hash table with tuples
+ - Maintaining Horizontal distance at every level from the node
+ - Last updated tuples will be the answer, update the hashtable based on greater level
+ ```python
+    bottom_view_map = {}
+    # Update the bottom view for the current horizontal distance
+    bottom_view_map[horizontal_distance] = (node.val, level)
+    sorted_bottom_view = sorted(bottom_view_map.items())  ## this will sort based on the keys
+   
+    # Getting the sorted elements
+    for _, (key, _) in sorted_bottom_view:
+    print(key, end=" ")
+ ```
+ ## Maximum Width of Binary Tree
+ - 
+ 
+## Height of Binary Tree
+ - Post-Order Traversal
+
+
 
 ## LinkedList Observations:
  - Updating linked list
