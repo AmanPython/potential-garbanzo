@@ -18,8 +18,7 @@ class Solution(object):
             length += 1
 
         # Step 2: Calculate the effective rotation value
-        k = k % length
-        if k == 0:
+        if (k := k % length) == 0:
             return head
 
         # Step 3: Find the new tail and break the cycle
